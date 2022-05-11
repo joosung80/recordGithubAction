@@ -12,3 +12,5 @@ jobs:
       run: ls -al
     - name: python version 
       run: python -V
+    - name: run python code
+      run: python test.py
