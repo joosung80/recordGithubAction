@@ -1,7 +1,6 @@
 name: helloGithubAction
 
 on: [push]
-permissions: read-all|write-all
 
 jobs:
   build:
