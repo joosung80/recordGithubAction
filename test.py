@@ -25,7 +25,7 @@ for i in twoStep:
 l = []
 
 for i in range(len(날짜)):
-    %load.append({
+    l.append({
         '날짜':날짜[i],
         '종가':종가[i],
         '전일비':전일비[i],
