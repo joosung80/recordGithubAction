@@ -7,7 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: run python code
+    - name: 1. 파일 목록 출력
+      run: ls -al
+    - name: 2. 파이썬 패키지 확인
+      run: pip list 
+    - name: 3. pip upgrade
+      run: python -m pip install --upgrade pip
+    - name: 4. 필요한 패키지 인스톨
+      run: pip install -r requirements.txt
+    - name: 5. 파이썬 실행 
       run: python test.py
-    - name: find file
-      run: find / -name 'test.py'
